@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+<div class="container pt-5 pb-5">
+
+    <div class="mb-5">
+        <h2>Slider 1</h2>
+        <div class="swiper-container swiper-container1 mb-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev slider__prev"></div>
+            <div class="swiper-button-next slider__next"></div>
+        </div>
+
+        <h2>Slider 2</h2>
+        <div class="swiper-container swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev slider__prev"></div>
+            <div class="swiper-button-next slider__next"></div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <h2>Gallery</h2>
+        <a data-fslightbox href="https://www.youtube.com/watch?v=QajyOqPeZw8">
+            <img class="img-thumbnail" src="https://img.youtube.com/vi/QajyOqPeZw8/mqdefault.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="mb-5">
+        <h2>Form</h2>
+        <form action="#" class="js-form form">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="name">Enter your name</label>
+                    <input type="text" class="form__input form-control" placeholder="Enter your name" autocomplete="off"
+                           data-validate-field="name" name="name" id="name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Enter your email</label>
+                    <input type="email" class="form__input form-control" placeholder="Enter your email"
+                           autocomplete="off"
+                           data-validate-field="email" name="email" id="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter your password</label>
+                <input type="password" class="form__input form-control" placeholder="Enter your password"
+                       autocomplete="off"
+                       data-validate-field="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="password">Enter your text</label>
+                <textarea name="msg" cols="30" rows="10" class="form__textarea form-control" data-validate-field="text"
+                          id="text"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-group form-check">
+                    <input type="checkbox" id="checkbox" class="form__checkbox form-check-input"
+                           data-validate-field="checkbox"
+                           checked><label class="form-check-label"
+                                          for="checkbox">I agree</label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label"><input type="checkbox" class="form__checkbox form-check-input"
+                                                           data-validate-field="checkbox2" checked>I
+                        agree</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-check">
+                    <input type="radio" name="radio" class="form__radio form-check-input" data-validate-field="radio">
+                    Male
+                </label>
+                <label class="form-check">
+                    <input type="radio" name="radio" class="form__radio form-check-input" data-validate-field="radio">
+                    Female
+                </label>
+            </div>
+
+            <button class="form__btn btn btn-primary">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="mb-5">
+        <select name="select" class="select">
+            <option value="Moscow">Moscow</option>
+            <option value="London">London</option>
+            <option value="New-York">New-York</option>
+            <option value="Paris">Paris</option>
+            <option value="York">York</option>
+        </select>
+    </div>
+
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

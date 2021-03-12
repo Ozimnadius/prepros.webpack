@@ -1,0 +1,22 @@
+@import "../node_modules/swiper/swiper-bundle";
+@import "../node_modules/just-validate/dist/css/justValidateTooltip";
+@import "../node_modules/bootstrap/dist/css/bootstrap";
+//@import "../node_modules/choices.js/public/assets/styles/base.min";
+@import "../node_modules/choices.js/public/assets/styles/choices.min";
+
+
+body{
+  padding-bottom: 300px;
+}
+
+.swiper-slide{
+  height: 200px;
+  background: grey;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
