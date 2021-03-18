@@ -5,7 +5,11 @@
   "devDependencies": {
     "bootstrap": "^4.6.0",
     "fslightbox": "^3.2.3",
-    "just-validate": "^1.5.0"
+    "just-validate": "^1.5.0",
+    "stylelint": "^13.12.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
   },
   "dependencies": {
     "choices.js": "^9.0.1",

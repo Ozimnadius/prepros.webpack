@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-light">
@@ -70,8 +71,8 @@
                        data-validate-field="password" name="password" id="password">
             </div>
             <div class="form-group">
-                <label for="password">Enter your text</label>
-                <textarea name="msg" cols="30" rows="10" class="form__textarea form-control" data-validate-field="text"
+                <label for="text">Enter your text</label>
+                <textarea name="msg" class="form__textarea form-control" data-validate-field="text"
                           id="text"></textarea>
             </div>
             <div class="form-group">
@@ -103,13 +104,19 @@
     </div>
 
     <div class="mb-5">
-        <select name="select" class="select">
-            <option value="Moscow">Moscow</option>
-            <option value="London">London</option>
-            <option value="New-York">New-York</option>
-            <option value="Paris">Paris</option>
-            <option value="York">York</option>
-        </select>
+        <label class="w-100">
+            <select name="select" class="select">
+                <option value="Moscow">Moscow</option>
+                <option value="London">London</option>
+                <option value="New-York">New-York</option>
+                <option value="Paris">Paris</option>
+                <option value="York">York</option>
+            </select>
+        </label>
+    </div>
+    
+    <div class="mb-5">
+        <div class="test"></div>
     </div>
 
 </div>

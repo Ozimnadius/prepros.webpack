@@ -1,22 +1,105 @@
 @import "../node_modules/swiper/swiper-bundle";
 @import "../node_modules/just-validate/dist/css/justValidateTooltip";
 @import "../node_modules/bootstrap/dist/css/bootstrap";
-//@import "../node_modules/choices.js/public/assets/styles/base.min";
 @import "../node_modules/choices.js/public/assets/styles/choices.min";
 
-
-body{
+body {
   padding-bottom: 300px;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.swiper-slide{
-  height: 200px;
-  background: grey;
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
+.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #808080;
 }
 
+.test {
+  width: 100%;
+  height: 400px;
+  background: #8b0000;
+  transform: translate(0, 0);
+  transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+
+  &:hover {
+    transform: translate(200px, 100px);
+    // animation: 10s undefined-easeOutElastic;
+  }
+}
+
+@keyframes opacity-easeOutElastic {
+  0% {
+    opacity: 1;
+  }
+
+  16% {
+    opacity: -0.32;
+  }
+
+  28% {
+    opacity: 0.13;
+  }
+
+  44% {
+    opacity: -0.05;
+  }
+
+  59% {
+    opacity: 0.02;
+  }
+
+  73% {
+    opacity: -0.01;
+  }
+
+  88% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes undefined-easeOutElastic {
+  0% {
+    transform: translateX(0%);
+  }
+
+  16% {
+    transform: translateX(-132.27%);
+  }
+
+  28% {
+    transform: translateX(-86.88%);
+  }
+
+  44% {
+    transform: translateX(-104.63%);
+  }
+
+  59% {
+    transform: translateX(-98.36%);
+  }
+
+  73% {
+    transform: translateX(-100.58%);
+  }
+
+  88% {
+    transform: translateX(-99.8%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+
+}
+
+  
