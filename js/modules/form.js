@@ -38,3 +38,11 @@ new window.JustValidate('.js-form', {
         console.log(errors);
     },
 });
+let timeout;
+document.querySelector('textarea').addEventListener('input', function (){
+    clearTimeout(timeout);
+    timeout = setTimeout(function (){
+        console.log('input text');
+    }, 1000)
+
+});
